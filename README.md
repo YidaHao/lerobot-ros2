@@ -57,5 +57,5 @@ lerobot 切换到 ros2
     ERROR： gz sim -r empty.sdf 运行失败
 两种可能：
     - gazebo 是版本 6（fortress），那么需要将 "gz sim" 命令换成等价的 "ign gazebo"
-    - gazebo 是版本 7（gardon）及 以上 需要 apt install 安装 libgz-sim<一个数字> 依赖。具体数字就是 gazebo 的版本。。安装 gazebo 教程 https://gazebosim.org/docs/latest/ros_installation/ 。安装 libgz 教程：https://gazebosim.org/api/sim/9/install.html
-    p.s. 根据 gazebo 官方说法，humble 对应的应该是 gazebo 6（fortress），但是这个仓里面使用的是 gazebo 7 （gardon）。
+    - gazebo 是版本 7（garden）及 以上 需要 apt install 安装 libgz-sim<一个数字> 依赖。具体数字就是 gazebo 的版本。。安装 gazebo 教程 https://gazebosim.org/docs/latest/ros_installation/ 。安装 libgz 教程：https://gazebosim.org/api/sim/9/install.html
+    p.s. 根据 gazebo 官方说法，humble 对应的应该是 gazebo 6（fortress），但是这个仓里面使用的是 gazebo 7 （garden）。
