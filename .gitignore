@@ -53,3 +53,8 @@ qtcreator-*
 CATKIN_IGNORE
 
 *.ikcache
+
+# Ignored packages
+src/ros_gz
+src/so_arm_100_hardware
+src/SO-100-arm
