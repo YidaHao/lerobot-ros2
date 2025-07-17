@@ -15,12 +15,6 @@ lerobot 切换到 ros2
 - 抽屉式迁移，尽量能做到和 lerobot 沟通，一步一步 ros 化
 - 需要在硬件控制这一层添加一个
 
-## 步骤
-- [X] lerobot 功能总结
-- [X] lerobot 依赖分析
-- [ ] lerobot 模块与机理分析
-- [ ] lerobot-ros2 规划（考虑泛用性）
-
 # lerobot 
 ## 功能
 1. 下载 dataset 以及预览 - hold
@@ -75,3 +69,8 @@ lerobot 切换到 ros2
 
 2. 运行 issacsim 卡死
 如果没有明显报错的话，就是后台在跑，等会儿就好了。理论上完成加载后会在终端显示“isaac sim full app is loaded”。我第一次花了 158 秒，之后都是 12 秒左右。
+
+3. 画面毛毛糙糙的晃眼睛
+问题： isaacsim 当前在 RTX50 系列上的问题。进一步确认可以看看 isaacsim about 里面的 kit 版本是不是 106.5.0
+解决方案： 换成 107.0.3 的 kit。具体参考 https://forums.developer.nvidia.com/t/the-isaac-sim-gui-is-blurry/327759/13
+         或者直接装 isaacsim 5.0，当前需要从 git 上 clone 下来自己编，参考：https://github.com/isaac-sim/IsaacSim

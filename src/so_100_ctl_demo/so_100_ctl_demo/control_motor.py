@@ -55,12 +55,8 @@ class TestROS2Bridge(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-
     ros2_publisher = TestROS2Bridge()
-
     rclpy.spin(ros2_publisher)
-
-    # 显式销毁节点
     ros2_publisher.destroy_node()
     rclpy.shutdown()
 
